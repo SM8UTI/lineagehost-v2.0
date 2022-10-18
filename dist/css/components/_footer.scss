@@ -1,0 +1,209 @@
+@use "../util/" as *;
+
+.main-footer{
+    padding-top: 5rem;
+    background-color: var(--gray-200);
+
+    &-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+
+        &-company{
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            
+            img{
+                width: 10rem;
+            }
+            
+            p{
+                color: #2f1c6a;
+                font-size: var(--sm-14);
+                letter-spacing: 0;
+                padding: 0;
+                opacity: 90%;
+            }
+
+            .payment{
+                display: grid;
+                grid-template-columns: repeat(auto-fill,minmax(60px,1fr));
+                gap: 0.3rem;
+
+                li{
+                    &:first-child{
+                        img{
+                            margin-left: -1rem;
+                        }
+                    }
+                    place-self: center;
+                    img{
+                        width: 3.75rem;
+                        object-fit: cover;
+                    }
+                    a{
+                        color: var(--blue-800);
+                        opacity: 90%;
+                        white-space: nowrap;
+
+                        &:hover,&:focus{
+                            opacity: 60%;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        &-links{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+            gap: 1.25rem;
+            row-gap: 1.5rem;
+            &-link{
+                display: flex;
+                flex-direction: column;
+                gap: 0.625rem;
+                color: var(--blue-800) !important;
+                h2{
+                    font-size: var(--sm-18);
+                    text-transform: uppercase;
+                }
+                
+                li{
+                    a{
+                        color: var(--blue-800) !important;
+                        font-size: var(--sm-15);
+                        font-weight: 600;
+                        opacity: 90%;
+
+                        &:hover,&:focus{
+                            opacity: 60%;
+                        }
+                    }
+                }
+            }
+
+
+
+
+        }
+
+
+
+    }
+
+    &-social{
+        margin-block: 1.25rem;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        a{
+            img{
+                width: 1.875rem;
+            }
+        }
+    }
+
+    &-copyright{
+        margin-inline:0.9375rem;
+        border-top:1px solid  var(--gray-100);
+        color: var(--gray-500);
+        padding-block: 0.6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        p{
+            font-size: var(--sm-15);
+            opacity: 80%;
+            font-weight: 500;
+            letter-spacing: 0;
+
+        }
+    }
+}
+
+.information-legal,.company-help{
+    display: flex;
+    gap:1.25rem;
+    row-gap: 1.5rem;
+    flex-direction: column;
+}
+
+.footer-logo{
+    svg{
+        width: 10rem;
+        fill: var(--blue-800);
+    }
+}
+
+@include breakpoint(mobile){
+    .main-footer{
+        &-container{
+            max-width: 700px;
+            margin-inline: auto;
+        }
+
+        &-social{
+            max-width: 700px;
+            margin-inline: auto;
+        }
+
+        &-copyright{
+            margin-block: 1rem;
+            max-width: 700px;
+            margin-inline: auto;
+            p{
+                margin-left: 1rem;
+            }
+        }
+    }
+    .company-help{
+        flex-direction: row;
+        column-gap: 6rem;
+    }
+}
+
+@include breakpoint(large){
+    .main-footer{
+        &-container{
+            grid-template-columns: 0.5fr 1fr;
+            max-width: 1200px;
+            margin-inline: auto;
+
+            &-links{
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+            }
+        }
+
+        &-social{
+            max-width: 1200px;
+            margin-inline: auto;
+            justify-content: flex-end;
+
+        }
+
+        &-copyright{
+            margin-block: 1rem;
+            max-width: 1200px;
+            margin-inline: auto;
+            flex-direction: row;
+            justify-content: space-between;
+
+            p{
+                &:first-child{
+                    margin-left: 1rem;
+                }
+                &:last-child{
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+    .company-help{
+        flex-direction: column;
+        white-space: nowrap;
+    }
+}
