@@ -1,0 +1,16 @@
+# Notice: Collection of data on LineageHost through automated means is
+# prohibited unless you have express written permission from LineageHost
+# and may only be conducted for the limited purpose contained in said
+# permission.
+
+# Created in the distant future (the year 2000) after
+# the robotic uprising of the mid 90's which wiped out all humans.
+
+User-agent: *
+Disallow: /dist/
+
+Allow: /
+
+Sitemap: https://www.lineagehost.com/sitemap.xml
+
+# This file was generated on Wed, 28 Sept 2022 09:33:02 +0000

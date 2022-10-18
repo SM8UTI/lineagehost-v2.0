@@ -1,0 +1,47 @@
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+body{
+    font-family: var(--dm-sans);
+    // background-color: var(--neutral-500);
+    background-color: var(--blue-500);
+}
+
+body.active{
+    overflow: hidden;
+}
+
+p{
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: var(--sm-14);
+}
+
+h1,h2,h3{
+    font-weight: 800;
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    border: none;
+    outline: none;
+}

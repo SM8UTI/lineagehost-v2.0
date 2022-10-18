@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+:root {
+  --blue-100:#8c85ff;
+  --blue-500:#673de6;
+  --blue-800:#2F1C6A;
+  --gray-100:#B6BDD3;
+  --gray-200:#F4F5FF;
+  --gray-500:#727586;
+  --neutral-100:#ffffff;
+  --neutral-200:#fafbff;
+  --neutral-300:#F4F5FF;
+  --pink-500:#FC5185;
+  --black-500:#36344d;
+}
+
+:root {
+  --dm-sans:"DM Sans",
+      sans-serif;
+  --sm-12:0.75rem;
+  --sm-14:0.875rem;
+  --sm-15:0.9375rem;
+  --sm-16:1rem;
+  --sm-17:1.0625rem;
+  --sm-18:1.125rem;
+  --sm-20:1.25rem;
+  --sm-21:1.3125rem;
+  --sm-24:1.5rem;
+  --sm-27:1.6875rem;
+  --sm-28:1.75rem;
+  --md-30:1.875rem;
+  --md-34:2.215rem;
+  --md-44:2.8rem;
+  --md-46:2.875rem;
+  --md-55:3.4375rem;
+  --lg-60:3.75rem;
+  --lg-70:4.375rem;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--dm-sans);
+  background-color: var(--blue-500);
+}
+
+body.active {
+  overflow: hidden;
+}
+
+p {
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: var(--sm-14);
+}
+
+h1, h2, h3 {
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}/*# sourceMappingURL=main.css.map */
