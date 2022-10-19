@@ -4,6 +4,17 @@
     padding: 30px 0 20px;
 }
 
+@keyframes fade-img{
+    0%{
+        opacity: 0;
+        translate: 20px 0;
+    }
+    100%{
+        opacity: 1;
+        translate: 0px 0;
+    }
+    
+}
 .container{
     display: grid;
     grid-template-columns: 1fr;
@@ -57,6 +68,7 @@
         width: 100%;
         img{
             width: 100%;
+            animation: fade-img 4s;
         }
     }
 }
