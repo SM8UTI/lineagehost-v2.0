@@ -7,14 +7,15 @@
 @keyframes fade-img{
     0%{
         opacity: 0;
-        translate: 20px 0;
     }
     100%{
         opacity: 1;
-        translate: 0px 0;
     }
     
 }
+
+.hero{
+
 .container{
     display: grid;
     grid-template-columns: 1fr;
@@ -66,18 +67,21 @@
 
     .col-image{
         width: 100%;
+        // max-width: 680px;
         img{
             width: 100%;
-            animation: fade-img 4s;
+            animation: fade-img 8s;
         }
     }
 }
 
+}
 
 @include breakpoint(small){
     .hero{
         padding: 48px 0px 48px;
     }
+    .hero{
     .container{
         .col-text{
             .btn-started{
@@ -87,11 +91,13 @@
         }
     }
 }
+}
 
 @include breakpoint(large){
     .hero{
         padding: 48px 0px 58px;
     }
+    .hero{
     .container{
         grid-template-columns: 1fr 1.3fr;
         grid-template-rows: auto;
@@ -113,5 +119,6 @@
                 max-width: 268px;
             }
         }
+    }
     }
 }
