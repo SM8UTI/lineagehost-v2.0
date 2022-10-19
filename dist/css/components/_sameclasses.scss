@@ -4,23 +4,33 @@
     padding-inline: 0.9375rem;
 }
 
+.main-padding{
+    padding-inline: 1rem;
+
+    @include breakpoint(large){
+        padding-inline:2.5rem ;
+    }
+}
+
 .p-2{
     padding-inline: 2rem;
 }
 
-.max{
+.max-width{
     width: 100%;
-    
-    &-1200{
-        margin-inline: auto;
-        max-width: 1200px;
+    margin-inline: auto;
+    max-width: 540px;
+
+    @include breakpoint(small){
+        max-width: 768px;
     }
     
-    &-650{
-        margin-inline: auto;
-        max-width: 650px;
+    @include breakpoint(large){
+        max-width: 1208px;
     }
 }
+
+
 
 .timer {
     margin-top: 1rem;
@@ -58,7 +68,7 @@
     font-size: var(--sm-18);
     font-weight: 800;
     padding: 0.8rem 4.7rem;
-    border-radius: 10rem;
+    border-radius: 4px;
 
     &:hover,&:focus{
         box-shadow: 0 0 20px rgb(0 0 0 / 25%);
@@ -88,6 +98,7 @@
 
 .bg-blue{
     background-color: var(--blue-500);
+    color: var(--neutral-100);
 }
 
 .bg-gray{
