@@ -31,6 +31,51 @@
 }
 
 
+.heading-title{
+    color: var(--blue-800);
+    font-size: var(--sm-24);
+
+
+    @include breakpoint(small){
+        font-size: var(--sm-28);
+    }
+
+    @include breakpoint(large){
+        font-size: var(--md-34);
+    }
+}
+
+.paragraph-title{
+    font-size: var(--sm-16);
+    color: var(--blue-800);
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.price-heading{
+    font-size: var(--md-34);
+    font-weight: 700;
+    color: var(--blue-800);
+    span{
+        font-size: var(--sm-20);
+        font-weight: 400;
+    }
+
+    @include breakpoint(small){
+        font-size: var(--md-40);
+    }
+}
+
+.text{
+    color: var(--blue-800);
+    font-weight: 400;
+    letter-spacing: 0;
+    &-14{
+        font-size: var(--sm-14);
+    }
+}
+
 
 .timer {
     margin-top: 1rem;

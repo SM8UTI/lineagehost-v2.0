@@ -104,7 +104,7 @@ button {
   margin-inline: auto;
   max-width: 540px;
 }
-@media (min-width: 50.625em) {
+@media (min-width: 48.625em) {
   .max-width {
     max-width: 768px;
   }
@@ -113,6 +113,53 @@ button {
   .max-width {
     max-width: 1208px;
   }
+}
+
+.heading-title {
+  color: var(--blue-800);
+  font-size: var(--sm-24);
+}
+@media (min-width: 48.625em) {
+  .heading-title {
+    font-size: var(--sm-28);
+  }
+}
+@media (min-width: 65em) {
+  .heading-title {
+    font-size: var(--md-34);
+  }
+}
+
+.paragraph-title {
+  font-size: var(--sm-16);
+  color: var(--blue-800);
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.price-heading {
+  font-size: var(--md-34);
+  font-weight: 700;
+  color: var(--blue-800);
+}
+.price-heading span {
+  font-size: var(--sm-20);
+  font-weight: 400;
+}
+@media (min-width: 48.625em) {
+  .price-heading {
+    font-size: var(--md-40);
+  }
+}
+
+.text {
+  color: var(--blue-800);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.text-14 {
+  font-size: var(--sm-14);
 }
 
 .timer {
@@ -749,7 +796,7 @@ button {
           animation: fade-img 8s;
 }
 
-@media (min-width: 50.625em) {
+@media (min-width: 48.625em) {
   .hero {
     padding: 48px 0px 48px;
   }
@@ -836,7 +883,7 @@ button {
   margin-bottom: 2.2rem;
 }
 
-@media (min-width: 50.625em) {
+@media (min-width: 48.625em) {
   .reviews .container {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -854,6 +901,70 @@ button {
   }
   .reviews .container .col:first-child {
     margin-block: 1rem;
+  }
+}
+.banner {
+  margin-block: 2rem;
+  padding-inline: 1rem;
+  margin-top: 4rem;
+}
+.banner .container {
+  border-radius: 4px;
+  text-align: center;
+  background-color: var(--gray-200);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  position: relative;
+}
+.banner .container img {
+  display: none;
+}
+.banner .container .row-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.banner .container .price-heading {
+  margin-top: 1.5rem;
+}
+.banner .container .btn-started {
+  margin-top: 1.5rem;
+  background-color: var(--blue-500);
+}
+
+@media (min-width: 48.625em) {
+  .banner {
+    padding-inline: 2.5rem;
+  }
+  .banner .container {
+    padding: 60px 100px;
+  }
+}
+@media (min-width: 65em) {
+  .banner {
+    margin-top: 6rem;
+  }
+  .banner .container {
+    padding: 80px 320px;
+  }
+  .banner .container img {
+    width: 100%;
+    max-width: 10.5rem;
+    display: inline-block;
+    position: absolute;
+    translate: 0 -50%;
+  }
+  .banner .container img:first-child {
+    top: 50%;
+    left: 0;
+  }
+  .banner .container img:nth-child(2) {
+    top: 50%;
+    right: 0;
   }
 }
 .main-footer {
