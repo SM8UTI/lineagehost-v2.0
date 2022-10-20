@@ -2,7 +2,7 @@
 
 .services{
     margin-block: 2rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
     .container{
         display: grid;
         grid-template-columns: 1fr;
@@ -71,7 +71,8 @@
 }
 
 .services-second{
-    padding-block: 5rem;
+    margin-top: 6rem;
+    padding-block: 4rem;
     .container{
         .col-image{
             order: 2;
@@ -110,6 +111,10 @@
             }
         }
     }
+}
+
+.services-third{
+    margin-top: 4rem;
 }
 
 @include breakpoint(large){

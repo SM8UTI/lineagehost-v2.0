@@ -52,7 +52,6 @@ html {
 body {
   font-family: var(--dm-sans);
   background-color: var(--neutral-500);
-  height: 5000px;
 }
 
 body.active {
@@ -968,7 +967,7 @@ button {
 }
 .services {
   margin-block: 2rem;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 .services .container {
   display: grid;
@@ -1026,7 +1025,8 @@ button {
 }
 
 .services-second {
-  padding-block: 5rem;
+  margin-top: 6rem;
+  padding-block: 4rem;
 }
 .services-second .container .col-image {
   order: 2;
@@ -1059,6 +1059,10 @@ button {
 }
 .services-second .container-re .col p {
   font-size: var(--sm-16);
+}
+
+.services-third {
+  margin-top: 4rem;
 }
 
 @media (min-width: 65em) {
