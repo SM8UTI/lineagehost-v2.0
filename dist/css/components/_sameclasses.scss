@@ -91,7 +91,13 @@
         gap: 0.4rem;
         list-style: none;
         img{
+
             width: 0.8rem;
+
+            &:first-child{
+                align-self: flex-start;
+                margin-top: 0.5rem;
+            }
         }
         p{
             font-size: var(--sm-16);
@@ -208,7 +214,8 @@
 }
 
 .bg-gray{
-    background-color: var(--gray-200);
+    background-color: #FAFBFF;
+    color: var(--blue-800);
 }
 
 

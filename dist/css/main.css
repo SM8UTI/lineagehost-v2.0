@@ -179,6 +179,10 @@ button {
 .col-text-list li img {
   width: 0.8rem;
 }
+.col-text-list li img:first-child {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
 .col-text-list li p {
   font-size: var(--sm-16);
   color: var(--gray-500);
@@ -287,7 +291,8 @@ button {
 }
 
 .bg-gray {
-  background-color: var(--gray-200);
+  background-color: #FAFBFF;
+  color: var(--blue-800);
 }
 
 @media (min-width: 35.625rem) {
@@ -1020,6 +1025,42 @@ button {
   fill: var(--blue-500);
 }
 
+.services-second {
+  padding-block: 5rem;
+}
+.services-second .container .col-image {
+  order: 2;
+}
+@media (min-width: 65em) {
+  .services-second .container .col-image {
+    order: 1;
+  }
+}
+@media (min-width: 65em) {
+  .services-second .container .col-text {
+    order: 2;
+  }
+}
+.services-second .container-re {
+  gap: 1.5rem;
+}
+.services-second .container-re .col {
+  background-color: #F4F5FF;
+  border-radius: 4px;
+}
+.services-second .container-re .col:nth-child(2) {
+  display: flex;
+}
+.services-second .container-re .col:nth-child(3) {
+  display: flex;
+}
+.services-second .container-re .col img {
+  width: 14rem;
+}
+.services-second .container-re .col p {
+  font-size: var(--sm-16);
+}
+
 @media (min-width: 65em) {
   .services .container {
     grid-template-columns: 1fr 1.3fr;
@@ -1035,6 +1076,12 @@ button {
   }
   .services .container-re .col:nth-child(3) {
     display: flex;
+  }
+  .services-second .container {
+    grid-template-columns: 1.1fr 1fr;
+  }
+  .services-second .container .col-text {
+    padding-left: 3rem;
   }
 }
 .main-footer {
