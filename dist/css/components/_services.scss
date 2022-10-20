@@ -117,6 +117,45 @@
     margin-top: 4rem;
 }
 
+.services-fourth{
+    padding-block: 4rem;
+    .container{
+        .col-text{
+            h1{
+                color: var(--neutral-100);
+            }
+            p{
+                color: var(--neutral-100);
+            }
+        }
+    }
+
+    .container-re{
+        gap: 1.5rem;
+        .col{
+            background-color: #5025D1;
+            border-radius: 4px;
+            
+                &:nth-child(2) {
+                    display: flex;
+                }
+            
+                &:nth-child(3) {
+                    display: flex;
+                }
+            
+                img {
+                    width: 14rem;
+                }
+            
+                p {
+                    font-size: var(--sm-16);
+                    color: var(--neutral-100);
+                }
+        }
+    }
+}
+
 @include breakpoint(large){
     .services{
         .container{
@@ -146,6 +185,16 @@
                 padding-left: 3rem;
             }
         }
+    }
+    .services-fourth{
+        padding-block: 6rem;
+        .container{
+            grid-template-columns: 1.1fr 1fr;
+            .col-text{
+                padding-left: 3rem;
+            }
+        }
+
     }
 }
 
