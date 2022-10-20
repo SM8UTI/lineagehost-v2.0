@@ -1,0 +1,9 @@
+@use "../util/" as *;
+
+
+.feature{
+    margin-top: 7rem;
+    &-text{
+        text-align: center;
+    }
+}
