@@ -46,6 +46,7 @@
     margin-top: 6rem;
     margin-bottom: 2rem;
     .container{
+        text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -60,6 +61,14 @@
         .money-back{
             margin-top: 0.7rem;
         }
+    }
+
+    &-2{
+        margin-block: 2rem;
+        @include breakpoint(large){
+            margin-block: 4rem;
+        }
+
     }
 }
 

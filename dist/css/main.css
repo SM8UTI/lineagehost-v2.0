@@ -52,7 +52,6 @@ html {
 body {
   font-family: var(--dm-sans);
   background-color: var(--neutral-500);
-  height: 10000px;
 }
 
 body.active {
@@ -973,6 +972,7 @@ button {
   margin-bottom: 2rem;
 }
 .join-banner .container {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -985,6 +985,14 @@ button {
 }
 .join-banner .container .money-back {
   margin-top: 0.7rem;
+}
+.join-banner-2 {
+  margin-block: 2rem;
+}
+@media (min-width: 65em) {
+  .join-banner-2 {
+    margin-block: 4rem;
+  }
 }
 
 @media (min-width: 48.625em) {
@@ -1291,13 +1299,15 @@ button {
   color: #2f1c6a;
   font-size: var(--sm-14);
   letter-spacing: 0;
+  line-height: 1.7;
   padding: 0;
   opacity: 90%;
+  font-weight: 400;
 }
 .main-footer-container-company .payment {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-  gap: 0.3rem;
+  gap: 0.5rem;
 }
 .main-footer-container-company .payment li {
   place-self: center;
@@ -1311,7 +1321,8 @@ button {
      object-fit: cover;
 }
 .main-footer-container-company .payment li a {
-  color: var(--blue-800);
+  font-weight: 500;
+  color: var(--blue-500);
   opacity: 90%;
   white-space: nowrap;
 }
@@ -1335,8 +1346,9 @@ button {
   text-transform: uppercase;
 }
 .main-footer-container-links-link li a {
+  font-weight: 400 !important;
   color: var(--blue-800) !important;
-  font-size: var(--sm-15);
+  font-size: var(--sm-14);
   font-weight: 600;
   opacity: 90%;
 }
@@ -1354,6 +1366,7 @@ button {
 }
 .main-footer-copyright {
   margin-inline: 0.9375rem;
+  margin-bottom: 0 !important;
   border-top: 1px solid var(--gray-100);
   color: var(--gray-500);
   padding-block: 0.6rem;
