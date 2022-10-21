@@ -6,4 +6,106 @@
     &-text{
         text-align: center;
     }
+
+    .container{
+        margin-top: 3.5rem;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        place-items: center;
+        gap: 2rem;
+
+        
+        .col{
+            position: relative;
+            border: 1px solid var(--gray-200);
+            border-radius: 4px;
+            box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+
+            color: var(--blue-800);
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: 1.5;
+
+            &-text{
+                padding: 48px 32px;
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+
+                p{
+                    font-weight:400;
+                    line-height: 1.6;
+                    font-size: var(--sm-14);
+                }
+
+                a{
+                    font-weight: 700;
+                    font-size: var(--sm-16);
+                    color: var(--blue-500);
+                }
+
+
+                &-star{
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    flex-direction: row;
+                    img{
+                        width: 1.5rem;
+                    }
+                }
+            }
+
+            &-author{
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                align-items: center;
+                border-top: 2px solid var(--gray-200);
+
+                background-color: var(--gray-200);
+                padding-block: 1.2rem;
+                padding-inline: 2rem;
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+                img{
+                    width: 4rem;
+                }
+
+                &-text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5srem;
+                    h1{
+                        font-size: var(--sm-18);
+                    }
+                    p{
+                        font-size: var(--sm-14);
+                        letter-spacing: 0;
+                        line-height: 1.5;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.btn-browse{
+    margin-top: 1rem;
+    display: grid;
+    place-items: center;
+}
+
+@include breakpoint(large){
+    .feature{
+        .container{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+        }
+    }
 }

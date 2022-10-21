@@ -186,6 +186,25 @@
     }
 }
 
+.btn-outline{
+    margin-block:2rem;
+    background-color: transparent;
+    color: var(--blue-500);
+    border: 2.5px solid var(--blue-500);
+    padding: 12px 16px;
+    font-size: var(--sm-16);
+    font-weight: 700;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    &:focus,&:hover{
+        background-color: #EBE4FF;
+
+    }
+}
+
 .btn-select{
 
     background-color: var(--blue-500);

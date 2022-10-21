@@ -265,6 +265,24 @@ button {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 }
 
+.btn-outline {
+  margin-block: 2rem;
+  background-color: transparent;
+  color: var(--blue-500);
+  border: 2.5px solid var(--blue-500);
+  padding: 12px 16px;
+  font-size: var(--sm-16);
+  font-weight: 700;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.btn-outline:focus, .btn-outline:hover {
+  background-color: #EBE4FF;
+}
+
 .btn-select {
   background-color: var(--blue-500);
   color: var(--neutral-100);
@@ -1168,7 +1186,90 @@ button {
 .feature-text {
   text-align: center;
 }
+.feature .container {
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  place-items: center;
+  gap: 2rem;
+}
+.feature .container .col {
+  position: relative;
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  color: var(--blue-800);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+.feature .container .col-text {
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.feature .container .col-text p {
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: var(--sm-14);
+}
+.feature .container .col-text a {
+  font-weight: 700;
+  font-size: var(--sm-16);
+  color: var(--blue-500);
+}
+.feature .container .col-text-star {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-direction: row;
+}
+.feature .container .col-text-star img {
+  width: 1.5rem;
+}
+.feature .container .col-author {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  border-top: 2px solid var(--gray-200);
+  background-color: var(--gray-200);
+  padding-block: 1.2rem;
+  padding-inline: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.feature .container .col-author img {
+  width: 4rem;
+}
+.feature .container .col-author-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5srem;
+}
+.feature .container .col-author-text h1 {
+  font-size: var(--sm-18);
+}
+.feature .container .col-author-text p {
+  font-size: var(--sm-14);
+  letter-spacing: 0;
+  line-height: 1.5;
+  font-weight: 400;
+}
 
+.btn-browse {
+  margin-top: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+@media (min-width: 65em) {
+  .feature .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
 .main-footer {
   padding-top: 5rem;
   background-color: var(--gray-200);
