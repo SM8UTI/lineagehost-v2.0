@@ -1,0 +1,240 @@
+[
+    {
+        "b":"100",
+        "l":"Parked domains",
+        "tooltip":"A parked domain is a registered domain name that's not linked to a website or email hosting service."
+    },
+    {
+        "b":"100",
+        "l":"Subdomains per Account",
+        "tooltip":"You can set up subdomains from aliases as well as the primary domain. Additionally, subdomains may be 'pointed' to any subdirectory in the hosting account."
+    },
+    {
+        "b":"Full",
+        "l":"DNS Editor",
+        "tooltip":"Be in charge of your records. LineageHost allows you to edit Domain Name System (DNS), including A, CNAME, MX, NS and other kinds of records."
+    },
+    {
+        "b":"Managed",
+        "l":"Wordpress",
+        "tooltip":"Get a list of developer-friendly tools that even newbies find intuitive. A package includes fast and seamless WordPress installation, the easy and quick WP Starter site-building wizard, managed auto-updates, the core software and plugins, a robust database of WordPress tutorials, friendly support, and more."
+    },
+    {
+        "b":"WordPress ",
+        "l":"acceleration",
+        "tooltip":"To make your website fast globally, we use LiteSpeed Cache for WordPress (LSCWP). This all-in-one site acceleration plugin features an exclusive server-level cache and a collection of optimization features. LSCWP supports WordPress Multisite and is compatible with the most popular plugins, including WooCommerce, bbPress, and Yoast SEO."
+    },
+    {
+        "b":"WordPress",
+        "l":"multisite",
+        "tooltip":"WordPress Multisite enables you to create and run multiple websites using the same WordPress installation on your server. In other words, you can manage several different WordPress websites from a single dashboard."
+    },
+    {
+        "b":"WP-CLI",
+        "l":"  ",
+        "tooltip":"WordPress Command Line Interface allows you to update plugins, configure multisite installations and much more, without using a web browser."
+    },
+    {
+        "b":"1-click",
+        "l":"Auto Installer",
+        "tooltip":"A custom tool that allows you to install over 100+ apps with a single click."
+    },
+    {
+        "b":"1 GB",
+        "l":"Email Storage"
+    },
+    {
+        "b":"100 Email",
+        "l":"mailboxes"
+    },
+    {
+        "b":"50 Email",
+        "l":"aliases"
+    },
+    {
+        "b":"5",
+        "l":"Forwarders"
+    },
+    {
+        "b":"Enterprise",
+        "l":"Virus Scanner"
+    },
+    {
+        "b":"Enterprise",
+        "l":"SPAM filter"
+    },
+    {
+        "b":"WebMail ",
+        "l":"Access"
+    },
+    {
+        "b":"Custom ",
+        "l":"Email Filters"
+    },
+    {
+        "b":"IMAP/SMTP",
+        "l":" "
+    },
+    {
+        "b":"Special offers",
+        "l":"for Fiverr services"
+    },
+    {
+        "b":"FAQ",
+        "l":"Database",
+        "tooltip":"Advice and answers from the Lineagehost Team"
+    },
+    {
+        "b":"40",
+        "l":"Active Processes",
+        "tooltip":"The total number of processes, e.g. SSH, Cron etc."
+    },
+    {
+        "b":"20",
+        "l":"Entry Processes",
+        "tooltip":"Number of website triggered processes."
+    },
+    {
+        "b":"400 000",
+        "l":"Inodes",
+        "tooltip":"Inodes are items that correspond to the number of files and folders you have on your account."
+    },
+    {
+        "b":"Unlimited",
+        "l":"Cronjobs",
+        "tooltip":"Schedule commands or scripts on a server, and run them periodically at fixed times, dates, or intervals."
+    },
+    {
+        "b":"Auto Script",
+        "l":"Installer"
+    },
+    {
+        "b":"Usage Monitoring",
+        "l":"and Statistics"
+    },
+    {
+        "b":"Automated",
+        "l":"Scaling suggestions"
+    },
+    {
+        "b":"GIT",
+        "l":"Support",
+        "tooltip":"Use the Git source control system to handle every project with speed and efficiency. We integrated it in our hosting plans to allow you to create repositories of your website, which you can later access, download, edit, and auto-deploy on multiple local branches using Git."
+    },
+    {
+        "b":"SSH",
+        "l":"Access",
+        "tooltip":"Use SSH to protect your communication with the remote server. It provides a secure encrypted connection to your account to easily manage massive files and even databases. It serves to administrators and web developers to enable direct secure access to their hosting account on the web server. With SSH enabled, you can also take advantage of SFTP for secure file access, transfer, and management."
+    },
+    {
+        "b":"Access",
+        "l":"Management",
+        "tooltip":"Collaborate efficiently on your web hosting account. With this tool, you can manage privileges for others to access your web hosting account (or just specific services)."
+    },
+    {
+        "b":"99.9%",
+        "l":"Uptime Guarantee",
+        "tooltip":"Maximize your presence online. We keep our uptime rates at a 99.9% height to ensure accessibility of your website at all times. When your website’s down, that’s a potentially missed opportunity to engage with a customer (or potential customer). That’s why we guarantee you one of the best service uptimes globally."
+    },
+    {
+        "b":"Unlimited",
+        "l":"FTP accounts",
+        "tooltip":"You can create and manage as many FTP accounts with specific restrictions for different people as you want—control who can connect to your website, upload, and download. Adding and removing FTP accounts is easy, as well as changing their passwords."
+    },
+    {
+        "b":"20 minutes",
+        "l":"average issue resolution time"
+    },
+    {
+        "b":"24/7/365",
+        "l":"chat and email service"
+    },
+    {
+        "b":"Knowledge",
+        "l":"Bases"
+    },
+    {
+        "b":"Unlimited",
+        "l":"Cronjobs"
+    },
+    {
+        "b":"Tutorials",
+        "l":" "
+    },
+    {
+        "b":"Webinars",
+        "l":" ",
+        "tooltip":"Watch the newest webinars and enjoy other content."
+    },
+    {
+        "b":"Unlimited",
+        "l":"databases"
+    },
+    {
+        "b":"3 GB",
+        "l":"Database Size"
+    },
+    {
+        "b":"Unlimited",
+        "l":"MySQL backup size"
+    },
+    {
+        "b":"500 MySQL",
+        "l":"connections"
+    },
+    {
+        "b":"200 MB",
+        "l":"MySQL import size"
+    },
+    {
+        "b":"16 MB",
+        "l":"MySQL packet size"
+    },
+    {
+        "b":"300 seconds",
+        "l":"MySQL statement time"
+    },
+    {
+        "b":"15 MySQL",
+        "l":"user connections"
+    },
+    {
+        "b":"60 seconds",
+        "l":"MySQL query time"
+    },
+    {
+        "b":"HTTP/3",
+        "l":" "
+    },
+    {
+        "b":"IPv6",
+        "l":"MySQL query time",
+        "tooltip":"Dedicated IPv6 internet protocol. By using a dedicated IP, all your scripts & extensions will work as fast as possible."
+    },
+    {
+        "b":"10 MB/s",
+        "l":"I/O",
+        "tooltip":"I/O (input/output defined as KB/s) is the “throughput” or speed of data transfer between the hard disk and the RAM."
+    },
+    {
+        "b":"128",
+        "l":"IPOS",
+        "tooltip":"IOPS (Input/output operations per second) is the standard unit of measurement for the maximum number of reads and writes in your account per second."
+    },
+    {
+        "b":"1 CPU",
+        "l":"Core"
+    },
+    {
+        "b":"1 GB",
+        "l":"RAM"
+    },
+    {
+        "b":"6 datacenter",
+        "l":"locations"
+    },
+    {
+        "b":"Dynamic",
+        "l":"PHP limits "
+    }
+]
