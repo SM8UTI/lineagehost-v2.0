@@ -828,6 +828,18 @@ button {
 .hero .container .col-text p:last-child img {
   width: 0.9rem;
 }
+.hero .container .col-text .correct {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+  justify-content: center;
+  padding-inline: 0;
+  font-size: var(--sm-14);
+}
+.hero .container .col-text .correct img {
+  width: 0.9rem;
+}
 .hero .container .col-text .btn-started {
   margin-top: 1rem;
   text-align: center;
@@ -865,6 +877,9 @@ button {
     font-size: var(--md-40);
   }
   .hero .container .col-text p:last-child {
+    justify-content: flex-start;
+  }
+  .hero .container .col-text .correct {
     justify-content: flex-start;
   }
   .hero .container .col-text .btn-started {
