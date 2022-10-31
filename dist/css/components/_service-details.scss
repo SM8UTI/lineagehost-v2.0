@@ -30,12 +30,12 @@
             }
 
             .col-text{
-                padding-right: 2rem;
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
-
+                
                 @include breakpoint(large){
+                    padding-right: 2rem;
                     h1{
                         font-size: var(--sm-24) !important;
                     }

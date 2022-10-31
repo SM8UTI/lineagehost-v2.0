@@ -1467,12 +1467,14 @@ button {
   }
 }
 .service-details-container .row .col-text {
-  padding-right: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 @media (min-width: 65em) {
+  .service-details-container .row .col-text {
+    padding-right: 2rem;
+  }
   .service-details-container .row .col-text h1 {
     font-size: var(--sm-24) !important;
   }
