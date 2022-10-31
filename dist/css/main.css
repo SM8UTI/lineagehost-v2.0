@@ -59,7 +59,6 @@ body.active {
 }
 
 p {
-  letter-spacing: 1px;
   font-weight: 600;
   font-size: var(--sm-14);
 }
@@ -309,6 +308,7 @@ button {
 }
 
 .btn-learn {
+  color: var(--neutral-100);
   text-decoration: underline;
 }
 .btn-learn:hover, .btn-learn:focus {
@@ -1435,6 +1435,95 @@ button {
     padding-left: 3rem;
   }
 }
+.service-details {
+  padding: 64px 0;
+  margin-top: 6rem;
+}
+@media (min-width: 65em) {
+  .service-details {
+    padding: 94px 0;
+  }
+}
+.service-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+@media (min-width: 65em) {
+  .service-details-container {
+    gap: 6rem;
+  }
+}
+.service-details-container .row {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+}
+@media (min-width: 65em) {
+  .service-details-container .row {
+    grid-template-columns: 1fr 1.1fr;
+    text-align: left;
+    gap: 4rem;
+  }
+}
+.service-details-container .row .col-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 65em) {
+  .service-details-container .row .col-text {
+    padding-right: 2rem;
+  }
+  .service-details-container .row .col-text h1 {
+    font-size: var(--sm-24) !important;
+  }
+}
+.service-details-container .row .col-text h1 {
+  font-size: var(--sm-18);
+  font-weight: 700;
+}
+.service-details-container .row .col-text p {
+  font-size: var(--sm-16);
+  font-weight: 400;
+  line-height: 1.6;
+}
+.service-details-container .row .col-text-item {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.service-details-container .row .col-text-item a {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+.service-details-container .row .col-image {
+  place-self: center;
+  width: 100%;
+}
+.service-details-container .row .col-image img {
+  max-width: 688px;
+  width: 100%;
+}
+@media (min-width: 65em) {
+  .service-details-container .row-2 {
+    grid-template-columns: 1.1fr 1fr;
+  }
+}
+@media (min-width: 65em) {
+  .service-details-container .row-2 .col-text {
+    order: 2;
+    padding-right: 0;
+    padding-left: 2rem;
+    text-align: left;
+  }
+}
+@media (min-width: 65em) {
+  .service-details-container .row-2 .col-image {
+    order: 1;
+  }
+}
+
 .feature {
   margin-top: 7rem;
 }
