@@ -58,6 +58,21 @@
             }
         }
 
+        .correct{
+                margin-top: 0.5rem;
+                display: flex;
+                flex-direction: row;
+                gap: 0.7rem;
+                justify-content: center;
+                padding-inline: 0;
+                font-size: var(--sm-14);
+
+                img{
+                    width: 0.9rem;
+                }
+        }
+
+
         .btn-started{
             margin-top: 1rem;
             text-align: center;
@@ -112,6 +127,10 @@
                 &:last-child{
                     justify-content: flex-start;
                 }
+            }
+            
+            .correct{
+                justify-content: flex-start;
             }
 
             .btn-started{
