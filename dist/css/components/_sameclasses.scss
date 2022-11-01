@@ -89,7 +89,7 @@
     }
 
     @include breakpoint(small){
-        font-size: var(--md-40);
+        font-size: var(--md-48);
     }
 }
 
@@ -213,7 +213,7 @@
 .btn-started{
     color: var(--neutral-100);
     background-color: var(--pink-500);
-    font-size: var(--sm-18);
+    font-size: var(--sm-16);
     font-weight: 800;
     padding: 0.8rem 4.7rem;
     border-radius: 4px;
@@ -247,7 +247,7 @@
     background-color: var(--blue-500);
     color: var(--neutral-100);
     border-radius: 10rem;
-    font-size: var(--sm-18);
+    font-size: var(--sm-16);
     font-weight: 800;
     padding: 0.8rem 4.7rem;
 
