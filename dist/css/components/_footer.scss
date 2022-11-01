@@ -100,29 +100,36 @@
     }
 
     &-social{
-        margin-block: 1.25rem;
+        margin-block: 1.4rem;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         gap: 0.5rem;
         a{
             img{
-                width: 1.875rem;
+                width: 2.125rem;
             }
         }
+
+        @include breakpoint(small){
+            justify-content: flex-start;
+            gap: 1.5rem;
+        }
+
     }
 
     &-copyright{
         margin-inline:0.9375rem;
         margin-bottom: 0 !important;
         border-top:1px solid  var(--gray-100);
-        color: var(--gray-800);
         padding-block: 24px;
         display: flex;
         flex-direction: column;
         gap: 1rem;
         p{
+            color: var(--blue-800);
             font-size: var(--sm-14);
-            opacity: 80%;
+            opacity: 90%;
             font-weight: 500;
             letter-spacing: 0;
 
@@ -192,6 +199,13 @@
             max-width: 1200px;
             margin-inline: auto;
             justify-content: flex-end;
+            gap: 0.4rem;
+
+            a{
+                img{
+                    width: 1.5rem;
+                }
+            }
 
         }
 
