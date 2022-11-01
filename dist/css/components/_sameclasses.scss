@@ -16,6 +16,28 @@
     padding-inline: 2rem;
 }
 
+.op{
+    &-60{
+        opacity: 80%;
+    }
+}
+
+.mt{
+    &-0_5{
+        margin-top: 0.5;
+    }
+    &-1{
+        margin-top: 1rem;
+    }
+    &-2{
+        margin-top: 2rem;
+    }
+
+    &-6{
+        margin-top: 6rem;
+    }
+}
+
 .max-width{
     width: 100%;
     margin-inline: auto;
