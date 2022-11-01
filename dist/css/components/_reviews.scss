@@ -92,3 +92,124 @@
         }
     }
 }
+
+.reviews-2{
+    margin-top: 2.5rem;
+    .heading-title{
+        display: none;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .paragraph-title{
+        display: none;
+        text-align: center;
+    }
+
+    .btn-learn{
+        display: grid;
+        place-items: center;
+        color: var(--blue-500);
+        margin-top: 2.5rem;
+        font-size: var(--sm-16);
+        font-weight: 500;
+    }
+
+    @include breakpoint(small){
+        .heading-title,.paragraph-title{
+            display: block;
+        }
+    }
+
+    &-container{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include breakpoint(small){
+            grid-template-columns: 1fr 2fr;
+        }
+
+        @include breakpoint(large){
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .col{
+            place-self: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            &-star{
+                max-width: 162px;
+            }
+
+            &-company{
+                max-width: 6rem;
+                align-self: center;
+            }
+
+            h1{
+                font-size: var(--sm-24);
+                font-weight: 400;
+                color: #191919;
+            }
+            p{
+                color: #191919;
+                font-size: var(--sm-14);
+                font-weight: 400;
+                span{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .col-customer{
+            margin-inline: 2rem;
+            display: none;
+            flex-direction: column;
+            gap: 0.4rem;
+            .star{
+                max-width: 100px;
+            }
+
+            h1{
+                font-size: var(--sm-14);
+                font-weight: 600;
+                opacity: 90%;
+            }
+
+            p{
+                font-size: var(--sm-13);
+                // color: var(--gray-500);
+                font-weight: 400;
+            }
+
+            &-2{
+                display: none !important ;
+            }
+
+            &-3{
+                display: none !important;
+            }
+
+            @include breakpoint(small){
+                display: flex;
+            }
+
+            @include breakpoint(large){
+                margin-inline: 1rem;
+                &-2{
+                    display: flex !important;
+                }
+
+                &-3{
+                    display: flex !important;
+                }
+            }
+
+
+        }
+    }
+}
+
