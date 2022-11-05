@@ -33,6 +33,10 @@
         margin-top: 2rem;
     }
 
+    &-4{
+        margin-top: 4rem;
+    }
+
     &-6{
         margin-top: 6rem;
     }
@@ -246,10 +250,11 @@
 
     background-color: var(--blue-500);
     color: var(--neutral-100);
-    border-radius: 10rem;
+    border-radius: 4px;
     font-size: var(--sm-16);
     font-weight: 800;
     padding: 0.8rem 4.7rem;
+    
 
     &:hover,&:focus{
         background-color: #491bd5;
