@@ -1713,6 +1713,7 @@ button {
 .hostings-links-container {
   margin-top: 3rem;
   display: grid;
+  gap: 2rem;
 }
 .hostings-links-container .col {
   display: flex;
