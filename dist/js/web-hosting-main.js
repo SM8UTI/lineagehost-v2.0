@@ -32,3 +32,15 @@ hambtn.addEventListener("click",()=>{
 window.addEventListener('scroll',function(){
     mainHeader.classList.toggle("sticky",window.scrollY > 0);
 })
+
+
+// faq
+
+let faq = document.querySelectorAll('.row')
+
+faq.forEach((e)=>{
+    e.addEventListener("click",()=>{
+        e.classList.toggle('active')
+        console.log("lol");
+    })
+})
