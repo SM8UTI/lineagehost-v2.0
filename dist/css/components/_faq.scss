@@ -1,0 +1,79 @@
+@use "../util/" as *;
+
+.faq{
+    &-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .row{
+            &-questions{
+                cursor: pointer;
+                padding: 24px 20px;
+                color: var(--blue-800);
+                border: 1px solid #d5dfff;
+                border-radius: 6px 6px 0 0 ;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2rem;
+                
+                h1{
+                    font-size: var(--sm-18) !important;
+                }
+                
+                svg{
+                    rotate: 180deg;
+                    transition: all 0.3s ease-in-out;
+                    fill: var(--blue-800);
+                }
+
+                @include breakpoint(small){
+                    h1{
+                        font-size: var(--sm-20) !important;
+                    }
+                }
+
+                @include breakpoint(large){
+                    h1{
+                        font-size: var(--sm-24) !important;
+                    }
+                }
+            }
+            
+            &-answer{
+                padding:0;
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+                border: none;
+                border-radius: 0 0 6px 6px;
+                overflow: hidden;
+                height: 0;
+                p{
+                    color: var(--gray-500);
+                    font-size: var(--sm-16);
+                    font-weight: 400;
+                    line-height: 1.5;
+                }
+            }
+
+        }
+        
+        .row.active{
+            .row-questions{
+                svg{
+                    rotate: 0deg;
+                }
+            }
+            .row-answer{
+                height: auto;
+                padding: 16px 24px 24px;
+                border: 1px solid #d5dfff;
+                border-top: none;
+            }
+        }
+    }
+}
