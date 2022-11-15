@@ -1982,7 +1982,7 @@ button {
   font-size: var(--sm-18) !important;
 }
 .faq-container .row-questions svg {
-  rotate: 180deg;
+  rotate: 0deg;
   transition: all 0.3s ease-in-out;
   fill: var(--blue-800);
 }
@@ -2013,7 +2013,7 @@ button {
   line-height: 1.5;
 }
 .faq-container .row.active .row-questions svg {
-  rotate: 0deg;
+  rotate: 180deg;
 }
 .faq-container .row.active .row-answer {
   height: auto;

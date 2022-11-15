@@ -6,9 +6,6 @@
         flex-direction: column;
         gap: 1rem;
 
-
-
-        
         .row{
             &-questions{
                 cursor: pointer;
@@ -28,7 +25,7 @@
                 }
                 
                 svg{
-                    rotate: 180deg;
+                    rotate: 0deg;
                     transition: all 0.3s ease-in-out;
                     fill: var(--blue-800);
                 }
@@ -68,7 +65,7 @@
         .row.active{
             .row-questions{
                 svg{
-                    rotate: 0deg;
+                    rotate: 180deg;
                 }
             }
             .row-answer{
