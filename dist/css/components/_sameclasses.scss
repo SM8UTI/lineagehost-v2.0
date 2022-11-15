@@ -301,6 +301,11 @@
     color: var(--blue-800);
 }
 
+.bg-pink{
+    background-color: var(--pink-500);
+    color: var(--neutral-100);
+}
+
 
 @include breakpoint(mobile) {
     .p-1 {
