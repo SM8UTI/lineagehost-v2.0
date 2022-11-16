@@ -1744,6 +1744,10 @@ button {
   max-width: 248px;
   margin-inline: auto;
 }
+.plan-features-container .plan-header .btn-select.bg-pink:hover {
+  background-color: #d63163;
+  opacity: 70%;
+}
 .plan-features-container .plan-body {
   margin-top: 1rem;
   color: var(--blue-800);
@@ -1780,6 +1784,65 @@ button {
 .plan-features-container .plan-body .features-list li span {
   margin-left: auto;
   margin-right: 0;
+}
+.plan-features-container .plan-body #more-features {
+  display: none;
+}
+.plan-features-container .plan-body #more-features-text {
+  display: none;
+}
+.plan-features-container .plan-body #technical-details {
+  display: none;
+}
+.plan-features-container .plan-body #technical-details-text {
+  display: none;
+}
+.plan-features-container .plan-body.active #more-features {
+  display: flex;
+}
+.plan-features-container .plan-body.active #more-features-text {
+  display: inline-block;
+}
+.plan-features-container .plan-body.active #technical-details {
+  display: flex;
+}
+.plan-features-container .plan-body.active #technical-details-text {
+  display: inline-block;
+}
+.plan-features-container .plan-footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--blue-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-size: var(--sm-16);
+  font-weight: 700;
+  cursor: pointer;
+}
+.plan-features-container .plan-footer svg {
+  fill: var(--blue-500);
+  rotate: 0deg;
+}
+.plan-features-container .plan-footer p:nth-child(2) {
+  display: none;
+}
+.plan-features-container .plan-footer.active p:first-child {
+  display: none;
+}
+.plan-features-container .plan-footer.active p:nth-child(2) {
+  display: inline-block;
+}
+.plan-features-container .plan-footer.active svg {
+  rotate: 180deg;
+}
+.plan-features-container .plan-footer.pink-tc {
+  color: var(--pink-500);
+}
+.plan-features-container .plan-footer.pink-tc svg {
+  fill: var(--pink-500);
 }
 .plan-features-container .plan-2 .plan-header::before {
   content: "Most popular";
