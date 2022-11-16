@@ -1744,6 +1744,10 @@ button {
   max-width: 248px;
   margin-inline: auto;
 }
+.plan-features-container .plan-header .btn-select.bg-pink:hover {
+  background-color: #d63163;
+  opacity: 70%;
+}
 .plan-features-container .plan-body {
   margin-top: 1rem;
   color: var(--blue-800);
