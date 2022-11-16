@@ -164,6 +164,91 @@
                 }
             }
 
+            &-body{
+                #more-features{
+                    display: none;
+
+                    &-text{
+                        display: none;
+                    }
+                }
+                #technical-details{
+                    display: none;
+
+                    &-text{
+                        display: none;
+                    }
+                }
+            }
+
+            &-body.active{
+                #more-features {
+                        display: flex;
+                
+                        &-text {
+                            display: inline-block;
+                        }
+                    }
+                #technical-details{
+                        display: flex;
+                
+                        &-text {
+                            display: inline-block;
+                        }
+                    }
+
+            }
+
+            &-footer{
+                margin-top: 2rem;
+                text-align: center;
+                color: var(--blue-500);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                gap: 0.5rem;
+                font-size: var(--sm-16);
+                font-weight: 700;
+                cursor: pointer;
+                svg{
+                    fill: var(--blue-500);
+                    rotate: 0deg;
+                }
+
+                p{
+                    &:nth-child(2){
+                        display: none;
+                    }
+                }
+            }
+
+            &-footer.active{
+                p{
+                    &:first-child{
+                        display: none;
+                    }
+
+                    &:nth-child(2){
+                        display: inline-block;
+                    }
+                }
+
+                svg{
+                    rotate: 180deg;
+                }
+            }
+
+
+
+            &-footer.pink-tc{
+                color: var(--pink-500);
+                svg{
+                    fill: var(--pink-500);
+                }
+            }
+
+
             &-2{
                 .plan-header{
 

@@ -41,6 +41,30 @@ let faq = document.querySelectorAll('.row')
 faq.forEach((e)=>{
     e.addEventListener("click",()=>{
         e.classList.toggle('active')
-        console.log("lol");
     })
 })
+
+// plan 
+
+const footerBtn = document.querySelectorAll('.plan-footer')
+
+const bodyPart = document.querySelectorAll(".plan-body")
+
+footerBtn.forEach((e)=>{
+    e.addEventListener("click",()=>{
+        bodyPart.forEach(f=>{
+            if(f.classList.contains('active')){
+                f.classList.remove('active')
+                footerBtn.forEach(s=>{
+                    s.classList.remove('active')
+                })
+            }else{
+                f.classList.add('active')
+                footerBtn.forEach(r=>{
+                    r.classList.add('active')
+                })
+            }
+        })
+    })
+})
+
