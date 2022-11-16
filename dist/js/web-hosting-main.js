@@ -68,3 +68,13 @@ footerBtn.forEach((e)=>{
     })
 })
 
+const popBtn = document.getElementById('popupBtn')
+const popup = document.querySelector('.popup-dial')
+const popClose = document.getElementById('popClose')
+
+popBtn.addEventListener('click',()=>{
+    popup.classList.add("active")
+    popClose.addEventListener('click',()=>{
+        popup.classList.remove("active")
+    })
+})
